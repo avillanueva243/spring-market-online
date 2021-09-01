@@ -5,4 +5,6 @@ public class Querys {
 														+ "inner join AUTORIZACION.PRODUCTOS p on p.CODIGO=c.CODPRODUCTO "
 														+ "where c.USUARIOID=?";
 	public static final String INSERT_COMPRA="insert into AUTORIZACION.COMPRAS(CODPRODUCTO,CANTIDAD,PRECIO,TOTAL,USUARIOID) values(?,?,?,?,?)";
+	
+	public static final String GET_USER_BY_NOMBRE = "select u.* from AUTORIZACION.USUARIOS u where u.NOMBRE=?";
 }
